@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpendWise — Dashboard Shell</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar / Navigation Menu -->
+    <aside class="sidebar" aria-label="Primary Navigation">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">SW</span>
+        <span class="brand-name">SpendWise</span>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#overview" class="nav-item active" aria-current="page">
+          <span class="nav-icon" aria-hidden="true">📊</span>
+          <span>Overview</span>
+        </a>
+        <a href="#categories" class="nav-item">
+          <span class="nav-icon" aria-hidden="true">🗂️</span>
+          <span>Categories</span>
+        </a>
+        <a href="#transactions" class="nav-item">
+          <span class="nav-icon" aria-hidden="true">💳</span>
+          <span>Transactions</span>
+        </a>
+        <a href="#budgets" class="nav-item">
+          <span class="nav-icon" aria-hidden="true">🎯</span>
+          <span>Budgets</span>
+        </a>
+        <a href="#reports" class="nav-item">
+          <span class="nav-icon" aria-hidden="true">📈</span>
+          <span>Reports</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="main-shell">
+      <!-- Header -->
+      <header class="topbar">
+        <div class="header-titles">
+          <h1>Monthly Budget Overview</h1>
+          <p class="header-subtitle">November 2026 • Personal Spending Shell</p>
+        </div>
+
+        <div class="header-summary">
+          <div class="summary-pill">
+            <span class="summary-label">Total Budget</span>
+            <strong class="summary-value">$3,200.00</strong>
+          </div>
+          <div class="summary-pill">
+            <span class="summary-label">Spent to Date</span>
+            <strong class="summary-value">$2,145.00</strong>
+          </div>
+        </div>
+      </header>
+
+      <!-- Category Cards Grid -->
+      <main id="categories" class="cards-grid" aria-label="Spending Categories">
+        <article class="card" tabindex="0">
+          <div class="card-header">
+            <span class="card-title">Food &amp; Groceries</span>
+            <span class="card-badge">68% used</span>
+          </div>
+          <div class="card-amount">$340.00 <span class="card-cap">/ $500.00</span></div>
+          <p class="card-meta">Supermarkets, produce &amp; weekly meal prep</p>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-header">
+            <span class="card-title">Transport</span>
+            <span class="card-badge">72% used</span>
+          </div>
+          <div class="card-amount">$180.00 <span class="card-cap">/ $250.00</span></div>
+          <p class="card-meta">Commuter transit pass, fuel &amp; ride shares</p>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-header">
+            <span class="card-title">Rent &amp; Housing</span>
+            <span class="card-badge">100% used</span>
+          </div>
+          <div class="card-amount">$1,200.00 <span class="card-cap">/ $1,200.00</span></div>
+          <p class="card-meta">Monthly apartment lease payment</p>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-header">
+            <span class="card-title">Entertainment</span>
+            <span class="card-badge">45% used</span>
+          </div>
+          <div class="card-amount">$90.00 <span class="card-cap">/ $200.00</span></div>
+          <p class="card-meta">Streaming subscriptions, cinema &amp; outings</p>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-header">
+            <span class="card-title">Savings</span>
+            <span class="card-badge">80% of goal</span>
+          </div>
+          <div class="card-amount">$400.00 <span class="card-cap">/ $500.00</span></div>
+          <p class="card-meta">Emergency reserve &amp; high-yield deposit</p>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-header">
+            <span class="card-title">Utilities</span>
+            <span class="card-badge">62% used</span>
+          </div>
+          <div class="card-amount">$155.00 <span class="card-cap">/ $250.00</span></div>
+          <p class="card-meta">Electricity, water &amp; home fiber internet</p>
+        </article>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
